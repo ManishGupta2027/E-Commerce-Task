@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple E-Commerce</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <!-- ✅ Banner Section -->
+<div class="banner">
+  <img src="./front-view-shop-word-red-table.jpg" alt="Shop Banner">
+  <div class="banner-text">
+    <h2>Welcome to My Shop</h2>
+    <p>Discover amazing products below!</p>
+  </div>
+</div>
+    <!-- Controls -->
+    <div class="controls container-fude">
+      <button id="loadBtn">Load Products</button>
+      <select id="sortSelect">
+        <option value="">Sort by Price</option>
+        <option value="asc">Low to High</option>
+        <option value="desc">High to Low</option>
+      </select>
+    </div>
+
+    <!-- Info Message -->
+    <div id="infoMessage" class="info-message">
+      👋 To see the items, please click the <strong>Load Products</strong> button.
+    </div>
+  </header>
+
+  <!-- Loader -->
+  <div id="loader" class="loader" style="display: none;"></div>
+
+  <!-- Product Grid -->
+  <main>
+    <div id="productList" class="product-grid"></div>
+    <div id="noProducts" class="no-products" style="display: none;">🚫 No products found.</div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
